@@ -68,7 +68,7 @@
           // Cria uma linha para cada item recebido da API
           data.itens.forEach((item) => {
             const linha = document.createElement("tr");
-            linha.className = "fade-up"; // Para a animação
+            linha.className = "fade-up";
             linha.innerHTML = `
               <td class="text-start">${item.cidade}</td>
               <td class="temp">${item.temp}°C</td>
@@ -88,7 +88,6 @@
           ).toLocaleTimeString("pt-BR");
         } catch (error) {
           console.error("Falha ao atualizar dados:", error);
-          // Opcional: mostrar uma mensagem de erro na tela
         }
       }
 
